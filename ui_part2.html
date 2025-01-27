@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ui_part2</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "7c92213e071547ba886165f9cf220ca8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "width": "300px"
+      }
+    },
+    "0a15ace542cb402880965fba0de557f4": {
+      "model_name": "TextStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "c7da1ae0de92451283d072adf4b847a6": {
+      "model_name": "TextModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "Adresse:",
+        "layout": "IPY_MODEL_7c92213e071547ba886165f9cf220ca8",
+        "placeholder": "Tapez une adresse",
+        "style": "IPY_MODEL_0a15ace542cb402880965fba0de557f4",
+        "value": "Le Rouet, Marseille"
+      }
+    },
+    "3c72201d73c5464f910c028a742fd943": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "59737e63fa0745ffb1990480141cb2ac": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "144444f53d6f4519a6f1fab44bde9b79": {
+      "model_name": "FloatSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "continuous_update": false,
+        "description": "Rayon (km):",
+        "layout": "IPY_MODEL_3c72201d73c5464f910c028a742fd943",
+        "max": 5.0,
+        "min": 0.1,
+        "style": "IPY_MODEL_59737e63fa0745ffb1990480141cb2ac",
+        "value": 1.0
+      }
+    },
+    "380792a66f7d4b3789ab7753b120216d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "8d509a1a7ca64cd796b135dbaa53b05b": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "38464eddc05e49d7bf09fbbca017c153": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "success",
+        "description": "Chercher parcs",
+        "layout": "IPY_MODEL_380792a66f7d4b3789ab7753b120216d",
+        "style": "IPY_MODEL_8d509a1a7ca64cd796b135dbaa53b05b"
+      }
+    },
+    "b93a8fd5716c48fabb2c66d017e9581c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "e5ed6d9cf46643b986e6a74b26c537a0": {
+      "model_name": "OutputModel",
+      "model_module": "@jupyter-widgets/output",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_b93a8fd5716c48fabb2c66d017e9581c",
+        "outputs": []
+      }
+    },
+    "795cf65c1cff494f9f25bd6e446f54ff": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "68e45254748f4f96ac85ee323b666bfc": {
+      "model_name": "HTMLStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "28ff866b0ca44503b4ebc61dff5b1201": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_795cf65c1cff494f9f25bd6e446f54ff",
+        "style": "IPY_MODEL_68e45254748f4f96ac85ee323b666bfc",
+        "value": "<h4>Recherche des parcs \u00e0 proximit\u00e9</h4>"
+      }
+    },
+    "496a4131a02640a58cf541189fb70af1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "2ef40f5c78104c409b61690c2d0574d1": {
+      "model_name": "VBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_28ff866b0ca44503b4ebc61dff5b1201",
+          "IPY_MODEL_c7da1ae0de92451283d072adf4b847a6",
+          "IPY_MODEL_144444f53d6f4519a6f1fab44bde9b79",
+          "IPY_MODEL_38464eddc05e49d7bf09fbbca017c153",
+          "IPY_MODEL_e5ed6d9cf46643b986e6a74b26c537a0"
+        ],
+        "layout": "IPY_MODEL_496a4131a02640a58cf541189fb70af1"
+      }
+    },
+    "9b91835e5b2e425ea1c565224c25f10b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "5e9ee2177a5249ac9140fb714b4242db": {
+      "model_name": "OutputModel",
+      "model_module": "@jupyter-widgets/output",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_9b91835e5b2e425ea1c565224c25f10b",
+        "outputs": [
+          {
+            "output_type": "display_data",
+            "data": {
+              "text/plain": "<folium.folium.Map at 0x1782683f150>",
+              "text/html": "<div style=\"width:100%;\"><div style=\"position:relative;width:100%;height:0;padding-bottom:60%;\"><span style=\"color:#565656\">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc=\"&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n    \n    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;\n    \n        &lt;script&gt;\n            L_NO_TOUCH = false;\n            L_DISABLE_3D = false;\n        &lt;/script&gt;\n    \n    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;\n    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;\n    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;\n    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;\n    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;\n    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;\n    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;\n    \n            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,\n                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;\n            &lt;style&gt;\n                #map_0c1a154f37359f8270ed6787fde06427 {\n                    position: relative;\n                    width: 100.0%;\n                    height: 100.0%;\n                    left: 0.0%;\n                    top: 0.0%;\n                }\n                .leaflet-container { font-size: 1rem; }\n            &lt;/style&gt;\n        \n&lt;/head&gt;\n&lt;body&gt;\n    \n    \n            &lt;div class=&quot;folium-map&quot; id=&quot;map_0c1a154f37359f8270ed6787fde06427&quot; &gt;&lt;/div&gt;\n        \n&lt;/body&gt;\n&lt;script&gt;\n    \n    \n            var map_0c1a154f37359f8270ed6787fde06427 = L.map(\n                &quot;map_0c1a154f37359f8270ed6787fde06427&quot;,\n                {\n                    center: [43.2779552, 5.3896737],\n                    crs: L.CRS.EPSG3857,\n                    ...{\n  &quot;zoom&quot;: 14,\n  &quot;zoomControl&quot;: true,\n  &quot;preferCanvas&quot;: false,\n}\n\n                }\n            );\n\n            \n\n        \n    \n            var tile_layer_85eefd282d2be5aa1b2cc6956457f8e6 = L.tileLayer(\n                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,\n                {\n  &quot;minZoom&quot;: 0,\n  &quot;maxZoom&quot;: 19,\n  &quot;maxNativeZoom&quot;: 19,\n  &quot;noWrap&quot;: false,\n  &quot;attribution&quot;: &quot;\\u0026copy; \\u003ca href=\\&quot;https://www.openstreetmap.org/copyright\\&quot;\\u003eOpenStreetMap\\u003c/a\\u003e contributors&quot;,\n  &quot;subdomains&quot;: &quot;abc&quot;,\n  &quot;detectRetina&quot;: false,\n  &quot;tms&quot;: false,\n  &quot;opacity&quot;: 1,\n}\n\n            );\n        \n    \n            tile_layer_85eefd282d2be5aa1b2cc6956457f8e6.addTo(map_0c1a154f37359f8270ed6787fde06427);\n        \n    \n            var marker_4e463cc6e21551df7d70b51be0b5234e = L.marker(\n                [43.2779552, 5.3896737],\n                {\n}\n            ).addTo(map_0c1a154f37359f8270ed6787fde06427);\n        \n    \n            var icon_b72240c0e5f1d8db994412ab0e3b360b = L.AwesomeMarkers.icon(\n                {\n  &quot;markerColor&quot;: &quot;red&quot;,\n  &quot;iconColor&quot;: &quot;white&quot;,\n  &quot;icon&quot;: &quot;home&quot;,\n  &quot;prefix&quot;: &quot;glyphicon&quot;,\n  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,\n}\n            );\n            marker_4e463cc6e21551df7d70b51be0b5234e.setIcon(icon_b72240c0e5f1d8db994412ab0e3b360b);\n        \n    \n        var popup_3da5985f6c3b1c5ba7c9aeb079f03ff7 = L.popup({\n  &quot;maxWidth&quot;: &quot;100%&quot;,\n});\n\n        \n            \n                var html_3174c1cde66b3f4cb2e4c4aea14bfc31 = $(`&lt;div id=&quot;html_3174c1cde66b3f4cb2e4c4aea14bfc31&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Adresse: Le Rouet, Marseille&lt;/div&gt;`)[0];\n                popup_3da5985f6c3b1c5ba7c9aeb079f03ff7.setContent(html_3174c1cde66b3f4cb2e4c4aea14bfc31);\n            \n        \n\n        marker_4e463cc6e21551df7d70b51be0b5234e.bindPopup(popup_3da5985f6c3b1c5ba7c9aeb079f03ff7)\n        ;\n\n        \n    \n    \n            var circle_27147a8b07a02227f48f7600713a3d77 = L.circle(\n                [43.2779552, 5.3896737],\n                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 1000.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}\n            ).addTo(map_0c1a154f37359f8270ed6787fde06427);\n        \n    \n        var popup_42116ed624076b6a1641040057a21d85 = L.popup({\n  &quot;maxWidth&quot;: &quot;100%&quot;,\n});\n\n        \n            \n                var html_de005b2dc7fcab8aaccff3dd00f697af = $(`&lt;div id=&quot;html_de005b2dc7fcab8aaccff3dd00f697af&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Rayon 1.0 km&lt;/div&gt;`)[0];\n                popup_42116ed624076b6a1641040057a21d85.setContent(html_de005b2dc7fcab8aaccff3dd00f697af);\n            \n        \n\n        circle_27147a8b07a02227f48f7600713a3d77.bindPopup(popup_42116ed624076b6a1641040057a21d85)\n        ;\n\n        \n    \n    \n            var marker_0223c4f9ea13269656dd52cb0b04473f = L.marker(\n                [43.284, 5.391],\n                {\n}\n            ).addTo(map_0c1a154f37359f8270ed6787fde06427);\n        \n    \n            var icon_6156fb60ac28bf8fb76bf7c57a82496b = L.AwesomeMarkers.icon(\n                {\n  &quot;markerColor&quot;: &quot;green&quot;,\n  &quot;iconColor&quot;: &quot;white&quot;,\n  &quot;icon&quot;: &quot;paw&quot;,\n  &quot;prefix&quot;: &quot;glyphicon&quot;,\n  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,\n}\n            );\n            marker_0223c4f9ea13269656dd52cb0b04473f.setIcon(icon_6156fb60ac28bf8fb76bf7c57a82496b);\n        \n    \n        var popup_d9973946032e85491ed0242e569faf5b = L.popup({\n  &quot;maxWidth&quot;: &quot;100%&quot;,\n});\n\n        \n            \n                var html_1c0679dc5b8d99dce83c27e5cce7f7da = $(`&lt;div id=&quot;html_1c0679dc5b8d99dce83c27e5cce7f7da&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Jardin de Corinthe (0.68 km)&lt;/div&gt;`)[0];\n                popup_d9973946032e85491ed0242e569faf5b.setContent(html_1c0679dc5b8d99dce83c27e5cce7f7da);\n            \n        \n\n        marker_0223c4f9ea13269656dd52cb0b04473f.bindPopup(popup_d9973946032e85491ed0242e569faf5b)\n        ;\n\n        \n    \n    \n            var marker_28f9fb3298b0587b7e11a57ee12426c6 = L.marker(\n                [43.2828122607033, 5.39913386106491],\n                {\n}\n            ).addTo(map_0c1a154f37359f8270ed6787fde06427);\n        \n    \n            var icon_ad1c22e914f7947fdad547c0eef5c02d = L.AwesomeMarkers.icon(\n                {\n  &quot;markerColor&quot;: &quot;green&quot;,\n  &quot;iconColor&quot;: &quot;white&quot;,\n  &quot;icon&quot;: &quot;paw&quot;,\n  &quot;prefix&quot;: &quot;glyphicon&quot;,\n  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,\n}\n            );\n            marker_28f9fb3298b0587b7e11a57ee12426c6.setIcon(icon_ad1c22e914f7947fdad547c0eef5c02d);\n        \n    \n        var popup_d1a6687d3bade7f3242417a3cf2953af = L.popup({\n  &quot;maxWidth&quot;: &quot;100%&quot;,\n});\n\n        \n            \n                var html_f0550ca78260f34c37df8e93e278ed09 = $(`&lt;div id=&quot;html_f0550ca78260f34c37df8e93e278ed09&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Square de Pologne (0.94 km)&lt;/div&gt;`)[0];\n                popup_d1a6687d3bade7f3242417a3cf2953af.setContent(html_f0550ca78260f34c37df8e93e278ed09);\n            \n        \n\n        marker_28f9fb3298b0587b7e11a57ee12426c6.bindPopup(popup_d1a6687d3bade7f3242417a3cf2953af)\n        ;\n\n        \n    \n&lt;/script&gt;\n&lt;/html&gt;\" style=\"position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;\" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>"
+            },
+            "metadata": {}
+          }
+        ]
+      }
+    },
+    "f3c91127b1de47e7bf1c80e465bfe969": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "fad84cf7738f44849dabeacc945ddeba": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "0643330af6e64042b22c5acadec7cda1": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "info",
+        "description": "Afficher carte",
+        "layout": "IPY_MODEL_f3c91127b1de47e7bf1c80e465bfe969",
+        "style": "IPY_MODEL_fad84cf7738f44849dabeacc945ddeba"
+      }
+    },
+    "a4b235c5206042329eaa7835156830d0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "7d39af56a4fb4b8cb956923a66f82709": {
+      "model_name": "HTMLStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "7548fd6caa8b45e181639d6b357caae0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_a4b235c5206042329eaa7835156830d0",
+        "style": "IPY_MODEL_7d39af56a4fb4b8cb956923a66f82709",
+        "value": "<h4>Carte Folium : Parcs dans le rayon choisi</h4>"
+      }
+    },
+    "30b774e6b1f248399e0f684fce034045": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "ea9d74d7a63743cfb16fff48a4b2d3f9": {
+      "model_name": "VBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_7548fd6caa8b45e181639d6b357caae0",
+          "IPY_MODEL_c7da1ae0de92451283d072adf4b847a6",
+          "IPY_MODEL_144444f53d6f4519a6f1fab44bde9b79",
+          "IPY_MODEL_0643330af6e64042b22c5acadec7cda1",
+          "IPY_MODEL_5e9ee2177a5249ac9140fb714b4242db"
+        ],
+        "layout": "IPY_MODEL_30b774e6b1f248399e0f684fce034045"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "ea9d74d7a63743cfb16fff48a4b2d3f9"}
+</script>
+
+</body>
+</html>
